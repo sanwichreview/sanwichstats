@@ -6,15 +6,9 @@
       "#O#"
     ],
     "key": {
-      "#": {
-        "item": "minecraft:diamond"
-      },
-      "O": {
-        "item": "minecraft:obsidian"
-      },
-      "T": {
-        "item": "minecraft:ghast_tear"
-      }
+      "#": "minecraft:diamond",
+      "O": "minecraft:obsidian",
+      "T": "minecraft:ghast_tear"
     },
     "result": {
       "id": "minecraft:crying_obsidian",

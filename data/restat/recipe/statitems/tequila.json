@@ -6,39 +6,24 @@
         "BEB"
     ],
     "key": {
-        "#": {
-            "item": "minecraft:cactus"
-        },
-        "E": {
-            "item": "minecraft:echo_shard"
-        },
-        "C": {
-            "item": "minecraft:crying_obsidian"
-        },
-        "G": {
-            "item": "minecraft:glass_bottle"
-        },
-        "B": {
-            "item": "minecraft:blaze_powder"
-        }
+        "#": "minecraft:cactus",
+        "E": "minecraft:echo_shard",
+        "C": "minecraft:crying_obsidian",
+        "G": "minecraft:glass_bottle",
+        "B": "minecraft:blaze_powder"
     },
     "result": {
-        "id": "minecraft:potion",
+        "id": "minecraft:stone_pickaxe",
         "count": 1,
         "components": {
-          "minecraft:potion_contents": {
-            "custom_color": 6684672,
-            "custom_effects": [
-              {
-                "id": "minecraft:nausea",
-                "amplifier": 100,
-                "duration": 60,
-                "show_particles": true
-              }
-            ]
-          },
+          "!minecraft:damage":{},
+          "!minecraft:max_damage":{},
+          "!minecraft:enchantable":{},
+          "!minecraft:tool":{},
+          "!minecraft:attribute_modifiers":{},
+          "minecraft:item_model": "sanwichstats:tequila",
           "minecraft:custom_data": {"tequila":1,"ss.statitem":1},
-          "minecraft:max_stack_size": 1,
+          "minecraft:max_stack_size": 4,
           "minecraft:item_name": "{\"text\":\"Fighting Juice\",\"color\":\"#EAC435\"}",
           "minecraft:enchantment_glint_override": true,
           "minecraft:rarity": "epic",
@@ -49,19 +34,21 @@
               "{\"text\":\"sanwichstats\",\"italic\":false,\"color\":\"#ac2c82\"}"
             ],
             "minecraft:hide_additional_tooltip": {},
-        "minecraft:attribute_modifiers": {
-          "modifiers": [
-            {
-              "id": "noreach",
-              "type": "minecraft:player.block_interaction_range",
-              "amount": -100,
-              "operation": "add_value",
-              "slot": "any"
-            }
-          ]
-        ,
-          "show_in_tooltip": false
-        }
+        "minecraft:food": {
+            "nutrition": 1,
+            "saturation": 1,
+            "can_always_eat": true
+          },
+          "minecraft:consumable": {
+        "consume_seconds": 3,
+        "animation": "drink",
+        "sound": "entity.generic.drink",
+        "has_consume_particles": false
+          },
+          "minecraft:use_remainder": {
+            "id": "minecraft:glass_bottle",
+            "count": 1
+          }
     }
   }
 }

@@ -1,0 +1,17 @@
+{
+  "sanwichstats.magic1": {
+    "sounds": [
+      "sanwichstats/magic1"
+    ]
+  },
+    "sanwichstats.magicbell": {
+    "sounds": [
+      "sanwichstats/magicbell"
+    ]
+  },
+    "sanwichstats.magicwoosh": {
+    "sounds": [
+      "sanwichstats/magicwoosh"
+    ]
+  }
+}

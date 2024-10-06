@@ -6,49 +6,35 @@
       "KGK"
   ],
   "key": {
-      "#": {
-          "item": "minecraft:magma_cream"
-      },
-      "C": {
-          "item": "minecraft:cake"
-      },
-      "E": {
-          "item": "minecraft:experience_bottle"
-      },
-      "R": {
-          "item": "minecraft:red_mushroom"
-      },
-      "K": {
-          "item": "minecraft:crying_obsidian"
-      },
-      "G": {
-          "item": "minecraft:glow_berries"
-      }
+      "#": "minecraft:magma_cream",
+      "C": "minecraft:cake",
+      "E": "minecraft:experience_bottle",
+      "R": "minecraft:red_mushroom",
+      "K": "minecraft:crying_obsidian",
+      "G": "minecraft:glow_berries"
   },
     "result": {
-      "id": "minecraft:red_mushroom",
+      "id": "minecraft:stone_pickaxe",
       "components": {
+        "!minecraft:damage":{},
+          "!minecraft:max_damage":{},
+          "!minecraft:enchantable":{},
+          "!minecraft:tool":{},
+          "!minecraft:attribute_modifiers":{},
         "minecraft:custom_data": {"megamush":1,"ss.statitem":1},
-        "minecraft:custom_model_data": 9290001,
+        "minecraft:item_model": "sanwichstats:megamush",
         "minecraft:max_stack_size": 4,
         "minecraft:food": {
-          "nutrition": 1,
-          "saturation": 1,
-          "can_always_eat": true,
-          "eat_seconds": 3,
-          "effects": [
-            {
-              "effect": {
-                "id": "minecraft:nausea",
-                "amplifier": 100,
-                "duration": 60,
-                "show_particles": false,
-                "show_icon": false
-              },
-              "probability": 1
-            }
-          ]
-        },
+            "nutrition": 1,
+            "saturation": 1,
+            "can_always_eat": true
+          },
+          "minecraft:consumable": {
+        "consume_seconds": 3,
+        "animation": "eat",
+        "sound": "entity.strider.eat",
+        "has_consume_particles": true
+          },
         "minecraft:item_name": "{\"text\":\"Mega Mushroom\",\"color\":\"#EAC435\"}",
         "minecraft:enchantment_glint_override": true,
         "minecraft:rarity": "epic",
@@ -60,21 +46,8 @@
             "{\"text\":\"+0.2 Range\",\"color\":\"#345995\",\"italic\":false}",
             "{\"text\":\"+0.05 Speed\",\"color\":\"#345995\",\"italic\":false}",
             "{\"text\":\"sanwichstats\",\"italic\":false,\"color\":\"#ac2c82\"}"
-          ],
-          "minecraft:attribute_modifiers": {
-            "modifiers": [
-              {
-                "id": "noreach",
-                "type": "minecraft:player.block_interaction_range",
-                "amount": -100,
-                "operation": "add_value",
-                "slot": "any"
-              }
-            ]
-          ,
-            "show_in_tooltip": false
+          ]
           }
-          }
-      }
     }
+}
   

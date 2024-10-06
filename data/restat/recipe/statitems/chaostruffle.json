@@ -6,58 +6,38 @@
       "BKG"
   ],
   "key": {
-      "#": {
-          "item": "minecraft:experience_bottle"
-      },
-      "X": {
-          "item": "minecraft:echo_shard"
-      },
-      "E": {
-          "item": "minecraft:enchanted_golden_apple"
-      },
-      "S": {
-          "item": "minecraft:sugar"
-      },
-      "C": {
-          "item": "minecraft:cocoa_beans"
-      },
-      "M": {
-          "item": "minecraft:milk_bucket"
-      },
-      "B": {
-          "item": "minecraft:blaze_powder"
-      },
-      "K": {
-          "item": "minecraft:crying_obsidian"
-      },
-      "G": {
-          "item": "minecraft:glowstone_dust"
-      }
+      "#": "minecraft:experience_bottle",
+      "X": "minecraft:echo_shard",
+      "E": "minecraft:enchanted_golden_apple",
+      "S": "minecraft:sugar",
+      "C": "minecraft:cocoa_beans",
+      "M": "minecraft:milk_bucket",
+      "B": "minecraft:blaze_powder",
+      "K": "minecraft:crying_obsidian",
+      "G": "minecraft:glowstone_dust"
   },
       "result": {
-        "id": "minecraft:cookie",
+        "id": "minecraft:stone_pickaxe",
         "count": 2,
         "components": {
+          "!minecraft:damage":{},
+          "!minecraft:max_damage":{},
+          "!minecraft:enchantable":{},
+          "!minecraft:tool":{},
+          "!minecraft:attribute_modifiers":{},
           "minecraft:custom_data": {"chaostruffle":1,"ss.statitem":1,"ss.nochest":1},
-          "minecraft:custom_model_data": 9290004,
+          "minecraft:item_model": "sanwichstats:truffle",
           "minecraft:max_stack_size": 4,
           "minecraft:food": {
             "nutrition": 1,
             "saturation": 1,
-            "can_always_eat": true,
-            "eat_seconds": 3,
-            "effects": [
-              {
-                "effect": {
-                  "id": "minecraft:nausea",
-                  "amplifier": 100,
-                  "duration": 60,
-                  "show_particles": false,
-                  "show_icon": false
-                },
-                "probability": 1
-              }
-            ]
+            "can_always_eat": true
+          },
+          "minecraft:consumable": {
+        "consume_seconds": 3,
+        "animation": "eat",
+        "sound": "entity.strider.eat",
+        "has_consume_particles": true
           },
           "minecraft:item_name": "{\"text\":\"Caramel Chaos Truffle\",\"color\":\"#EAC435\"}",
           "minecraft:rarity": "epic",
@@ -75,21 +55,8 @@
               "{\"text\":\"🎰0.2 Attack Speed\",\"color\":\"#345995\",\"italic\":false}",
               "{\"text\":\"☹ No chest armor.\",\"color\":\"#E83151\",\"italic\":false}",
               "{\"text\":\"sanwichstats\",\"italic\":false,\"color\":\"#ac2c82\"}"
-            ],
-            "minecraft:attribute_modifiers": {
-              "modifiers": [
-                {
-                  "id": "noreach",
-                  "type": "minecraft:player.block_interaction_range",
-                  "amount": -100,
-                  "operation": "add_value",
-                  "slot": "any"
-                }
-              ]
-            ,
-              "show_in_tooltip": false
-            }
+            ]
             }
         }
-      }
+}
     

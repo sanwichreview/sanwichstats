@@ -20,7 +20,7 @@ tp @s ~ ~1000 ~
 
 #Store blast protection values & temporarily remove it if present
 tag @s remove player_motion.internal.blastprot
-execute unless items entity @s armor.* *[enchantments~[{enchantment:"minecraft:blast_protection"}]] run return 0
+execute unless items entity @s armor.* *[minecraft:enchantments~[{minecraft:blast_protection}]] run return 0
 tag @s add player_motion.internal.blastprot
 
 scoreboard players set @s player_motion.internal.blastprot.feet 0

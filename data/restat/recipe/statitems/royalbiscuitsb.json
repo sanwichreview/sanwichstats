@@ -7,53 +7,37 @@
         "JPJ"
     ],
     "key": {
-        "#": {
-            "item": "minecraft:gold_ingot"
-        },
-        "E": {
-            "item": "minecraft:emerald"
-        },
-        "S": {
-            "item": "minecraft:sugar"
-        },
-        "C": {
-            "item": "minecraft:cookie"
-        },
-        "Y": {
-            "item": "minecraft:sweet_berries"
-        },
-        "J": {
-            "item": "minecraft:experience_bottle"
-        },
-        "P": {
-            "item": "minecraft:enchanted_golden_apple"
-        }
+        "#": "minecraft:gold_ingot",
+        "E": "minecraft:emerald",
+        "S": "minecraft:sugar",
+        "C": "minecraft:cookie",
+        "Y": "minecraft:sweet_berries",
+        "J": "minecraft:experience_bottle",
+        "P": "minecraft:enchanted_golden_apple"
     },
     "result": {
-      "id": "minecraft:cookie",
+      "id": "minecraft:stone_pickaxe",
       "count":2,
       "components": {
+        "!minecraft:damage":{},
+          "!minecraft:max_damage":{},
+          "!minecraft:enchantable":{},
+          "!minecraft:tool":{},
+          "!minecraft:attribute_modifiers":{},
         "minecraft:custom_data": {"royalbiscuit":1,"ss.statitem":1},
-        "minecraft:custom_model_data": 9290003,
+        "minecraft:item_model": "sanwichstats:royalbiscuit",
         "minecraft:max_stack_size": 4,
         "minecraft:food": {
-          "nutrition": 1,
-          "saturation": 1,
-          "can_always_eat": true,
-          "eat_seconds": 3,
-          "effects": [
-            {
-                "effect": {
-                    "id": "minecraft:nausea",
-                    "amplifier": 100,
-                    "duration": 60,
-                    "show_particles": false,
-                    "show_icon": false
-              },
-              "probability": 1
-            }
-          ]
-        },
+            "nutrition": 1,
+            "saturation": 1,
+            "can_always_eat": true
+          },
+          "minecraft:consumable": {
+        "consume_seconds": 3,
+        "animation": "eat",
+        "sound": "entity.strider.eat",
+        "has_consume_particles": true
+          },
         "minecraft:item_name": "{\"text\":\"Royal Biscuit\",\"color\":\"#EAC435\"}",
         "minecraft:enchantment_glint_override": true,
         "minecraft:rarity": "epic",
@@ -62,21 +46,8 @@
             "{\"text\":\"+3 Armor\",\"color\":\"#345995\",\"italic\":false}",
             "{\"text\":\"-2 Health\",\"color\":\"#E83151\",\"italic\":false}",
             "{\"text\":\"sanwichstats\",\"italic\":false,\"color\":\"#ac2c82\"}"
-          ],
-          "minecraft:attribute_modifiers": {
-            "modifiers": [
-              {
-                "id": "noreach",
-                "type": "minecraft:player.block_interaction_range",
-                "amount": -100,
-                "operation": "add_value",
-                "slot": "any"
-              }
-            ]
-          ,
-            "show_in_tooltip": false
-          }
-        }
+          ]
     }
   }
+}
   

@@ -7,52 +7,36 @@
         "TMH"
     ],
     "key": {
-        "#": {
-            "item": "minecraft:experience_bottle"
-        },
-        "E": {
-            "item": "minecraft:enchanted_golden_apple"
-        },
-        "F": {
-            "item": "minecraft:fermented_spider_eye"
-        },
-        "S": {
-            "item": "minecraft:sugar"
-        },
-        "T": {
-            "item": "minecraft:torchflower"
-        },
-        "M": {
-            "item": "minecraft:large_fern"
-        },
-        "H": {
-            "item": "minecraft:hanging_roots"
-        }
+        "#": "minecraft:experience_bottle",
+        "E": "minecraft:enchanted_golden_apple",
+        "F": "minecraft:fermented_spider_eye",
+        "S": "minecraft:sugar",
+        "T": "minecraft:torchflower",
+        "M": "minecraft:large_fern",
+        "H": "minecraft:hanging_roots"
     },
     "result": {
-        "id": "minecraft:slime_ball",
+        "id": "minecraft:stone_pickaxe",
         "count":2,
         "components": {
+          "!minecraft:damage":{},
+          "!minecraft:max_damage":{},
+          "!minecraft:enchantable":{},
+          "!minecraft:tool":{},
+          "!minecraft:attribute_modifiers":{},
           "minecraft:custom_data": {"adultgummy":1,"ss.statitem":1},
-          "minecraft:custom_model_data": 9290001,
+          "minecraft:item_model": "sanwichstats:adultgummy",
           "minecraft:max_stack_size": 4,
           "minecraft:food": {
             "nutrition": 1,
             "saturation": 1,
-            "can_always_eat": true,
-            "eat_seconds": 3,
-            "effects": [
-              {
-                "effect": {
-                  "id": "minecraft:nausea",
-                  "amplifier": 1,
-                  "duration": 300,
-                  "show_particles": false,
-                  "show_icon": false
-                },
-                "probability": 1
-              }
-            ]
+            "can_always_eat": true
+          },
+          "minecraft:consumable": {
+        "consume_seconds": 3,
+        "animation": "eat",
+        "sound": "entity.strider.eat",
+        "has_consume_particles": true
           },
           "minecraft:item_name": "{\"text\":\"Adult Gummy\",\"color\":\"#EAC435\"}",
           "minecraft:enchantment_glint_override": true,

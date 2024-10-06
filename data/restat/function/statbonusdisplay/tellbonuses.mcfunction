@@ -41,7 +41,7 @@ scoreboard players operation @s ss.mathTemp = @s ss.speedBonus
 scoreboard players set $100 ss.intTemp 100
 scoreboard players operation @s ss.mathTemp %= $100 ss.intTemp 
 
-execute store result storage restat:tellbonuses tellbonuses.speedvalones int .01 run scoreboard players get @s ss.speedBonusBonus
+execute store result storage restat:tellbonuses tellbonuses.speedvalones int .01 run scoreboard players get @s ss.speedBonus
 execute store result storage restat:tellbonuses tellbonuses.speedvaltenths int 1 run scoreboard players get @s ss.mathTemp
 execute as @s[scores={ss.speedBonus=0}] run data modify storage restat:tellbonuses tellbonuses.speedclr set value gray
 execute as @s[scores={ss.speedBonus=1..20}] run data modify storage restat:tellbonuses tellbonuses.speedclr set value "#3b8f4e"

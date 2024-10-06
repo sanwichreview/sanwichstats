@@ -17,7 +17,7 @@
         }
       },
       "description": {
-        "text": "Major Ability: Levitation (double-crouch to ascend, crouch to descend)",
+        "text": "Major Ability: Levitation (double-jump to activate)",
         "color": "#345995",
         "extra": [
             {

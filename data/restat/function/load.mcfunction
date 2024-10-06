@@ -7,25 +7,36 @@ scoreboard objectives add ss.incompatabilityCheck dummy
 scoreboard players add @a ss.incompatabilityCheck 0
 scoreboard objectives add ss.replaceCheck dummy
 scoreboard players add @a ss.replaceCheck 0
+scoreboard objectives add ss.refreshCheck dummy
+scoreboard players add @a ss.refreshCheck 0
 scoreboard objectives add ss.lowDamageCheck dummy
 scoreboard players set @a ss.lowDamageCheck 0
 scoreboard objectives add ss.lowDamageCompare dummy
 scoreboard objectives add statDisplayTimer dummy
 scoreboard objectives add ss.usedEnderPearl minecraft.used:minecraft.ender_pearl
 scoreboard objectives add ss.crouchCount dummy
-scoreboard objectives add ss.jumpCount minecraft.custom:minecraft.jump
+scoreboard objectives add ss.crouchTimer dummy
+scoreboard objectives add ss.isDoubleCrouched dummy
+scoreboard objectives add ss.jumpCount dummy
 scoreboard players add @a ss.jumpCount 0
 scoreboard objectives add ss.isCrouched dummy
 scoreboard players add @a ss.isCrouched 0 
-scoreboard objectives add ss.isDoubleCrouched dummy
-scoreboard players add @a ss.isDoubleCrouched 0
-scoreboard objectives add ss.crouchTimer dummy
-scoreboard players add @a ss.crouchTimer 0
+scoreboard objectives add ss.holdingJump dummy
+scoreboard players add @a ss.holdingJump 0 
+scoreboard objectives add ss.isDoubleJumped dummy
+scoreboard players add @a ss.isDoubleJumped 0
+scoreboard objectives add ss.jumpTimer dummy
+scoreboard players add @a ss.jumpTimer 0
 scoreboard objectives add ss.leave minecraft.custom:minecraft.leave_game
 scoreboard players add @a ss.leave 0
 scoreboard objectives add ss.randomInt dummy
 scoreboard objectives add ss.usedMace minecraft.used:minecraft.mace
 scoreboard players add @a ss.usedMace 0
+
+scoreboard objectives add ss.oneSecTimer dummy
+scoreboard players add @a ss.oneSecTimer 0
+
+scoreboard objectives add ss.gravityTemp dummy
 
 scoreboard objectives add showstats trigger
 scoreboard players enable @a showstats
@@ -37,12 +48,16 @@ scoreboard players enable @a showboth
 scoreboard objectives add ss.isLevitating dummy
 scoreboard players add @a ss.isLevitating 0
 scoreboard objectives add ss.isIdleLevitating dummy
-scoreboard players add @a ss.isDoubleCrouched 0
 scoreboard objectives add ss.isDescendLevitating dummy
-scoreboard players add @a ss.isDoubleCrouched 0
 scoreboard objectives add ss.levitationUnstuckTimer dummy
 scoreboard players add @a ss.levitationUnstuckTimer 0
 scoreboard objectives add ss.levitationReapplyFD dummy
+
+scoreboard objectives add ss.levitationCharge dummy
+scoreboard players add @a ss.levitationCharge 0
+
+scoreboard objectives add ss.levitateDepleteTimer dummy
+scoreboard players add @a ss.levitateDepleteTimer 0
 
 scoreboard objectives add ss.teleportRange dummy
 scoreboard objectives add ss.teleportCooldown dummy
@@ -61,31 +76,31 @@ scoreboard objectives add ss.mathTemp dummy
 scoreboard objectives add ss.mathOut dummy
 
 scoreboard objectives add ss.size dummy
-scoreboard players set @a[tag=!ss.initialized] ss.size 10
+scoreboard players add @a ss.size 0
 
 scoreboard objectives add ss.health dummy
-scoreboard players set @a[tag=!ss.initialized] ss.health 20
+scoreboard players add @a ss.health 0
 
 scoreboard objectives add ss.armor dummy
-scoreboard players set @a[tag=!ss.initialized] ss.armor 0
+scoreboard players add @a ss.armor 0
 
 scoreboard objectives add ss.damage dummy
-scoreboard players set @a[tag=!ss.initialized] ss.damage 10
+scoreboard players add @a ss.damage 0
 
 scoreboard objectives add ss.speed dummy
-scoreboard players set @a[tag=!ss.initialized] ss.speed 100
+scoreboard players add @a ss.speed 0
 
 scoreboard objectives add ss.blockReach dummy
-scoreboard players set @a[tag=!ss.initialized] ss.blockReach 45
+scoreboard players add @a ss.blockReach 0
 
 scoreboard objectives add ss.entityReach dummy
-scoreboard players set @a[tag=!ss.initialized] ss.entityReach 30
+scoreboard players add @a ss.entityReach 0
 
 scoreboard objectives add ss.mineSpeed dummy
-scoreboard players set @a[tag=!ss.initialized] ss.mineSpeed 10
+scoreboard players add @a ss.mineSpeed 0
 
 scoreboard objectives add ss.attackSpeed dummy
-scoreboard players set @a[tag=!ss.initialized] ss.attackSpeed 40
+scoreboard players add @a ss.attackSpeed 0
 
 
 #BONUS stats
@@ -115,6 +130,35 @@ scoreboard players add @a ss.mineSpeedBonus 0
 
 scoreboard objectives add ss.attackSpeedBonus dummy
 scoreboard players add @a ss.attackSpeedBonus 0
+
+
+#These scoreboards will hold the players total stats for the sake of easy comparison in other commands
+scoreboard objectives add ss.sizeCompare dummy
+scoreboard players add @a ss.sizeCompare 0
+
+scoreboard objectives add ss.healthCompare dummy
+scoreboard players add @a ss.health 0
+
+scoreboard objectives add ss.armorCompare dummy
+scoreboard players add @a ss.armorCompare 0
+
+scoreboard objectives add ss.damageCompare dummy
+scoreboard players add @a ss.damageCompare 0
+
+scoreboard objectives add ss.speedCompare dummy
+scoreboard players add @a ss.speedCompare 0
+
+scoreboard objectives add ss.blockReachCompare dummy
+scoreboard players add @a ss.blockReachCompare 0
+
+scoreboard objectives add ss.entityReachCompare dummy
+scoreboard players add @a ss.entityReachCompare 0
+
+scoreboard objectives add ss.mineSpeedCompare dummy
+scoreboard players add @a ss.mineSpeedCompare 0
+
+scoreboard objectives add ss.attackSpeedCompare dummy
+scoreboard players add @a ss.attackSpeedCompare 0
 
 
 
@@ -150,6 +194,21 @@ recipe give @a restat:statitems/chaostruffle
 recipe give @a restat:abilityitems/floatmacaron
 recipe give @a restat:abilityitems/instantpopcorn
 recipe give @a restat:nog/nog
+
+
+execute as @a run attribute @s armor modifier add ss.armor 0 add_value
+execute as @a run attribute @s attack_speed modifier add ss.attackspeed 0 add_value
+execute as @a run attribute @s block_interaction_range modifier add ss.blockreach 0 add_value
+execute as @a run attribute @s attack_damage modifier add ss.damage 0 add_value
+execute as @a run attribute @s entity_interaction_range modifier add ss.entityreach 0 add_value
+execute as @a run attribute @s max_health modifier add ss.health 0 add_value
+execute as @a run attribute @s block_break_speed modifier add ss.minespeed 0 add_value
+execute as @a run attribute @s scale modifier add ss.size 0 add_value
+execute as @a run attribute @s movement_speed modifier add ss.speed 0 add_value
+
+execute as @a run attribute @s gravity modifier add ss.gravitytemp 0 add_value
+execute as @a run attribute @s gravity modifier add ss.stupidgravity 0 add_value
+
 
 advancement grant @a from restat:packdesc/root 
 advancement revoke @a[tag=!ss.ability.levitation] only restat:packdesc/abilityitems/floatmacaron-on

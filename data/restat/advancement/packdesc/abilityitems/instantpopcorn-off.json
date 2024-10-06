@@ -17,7 +17,7 @@
         }
       },
       "description": {
-        "text": "Major Ability: Teleporation (Double-crouch to charge, uncrouch to teleport)",
+        "text": "Major Ability: Teleporation (double-jump and hold to charge, release to teleport)",
         "color": "#345995",
         "extra": [
             {

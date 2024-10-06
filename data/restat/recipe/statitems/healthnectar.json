@@ -6,49 +6,40 @@
       "E#Z"
   ],
   "key": {
-      "#": {
-          "item": "minecraft:echo_shard"
-      },
-      "S": {
-          "item": "minecraft:sweet_berries"
-      },
-      "H": {
-          "item": "minecraft:honeycomb"
-      },
-      "G": {
-          "item": "minecraft:glass_bottle"
-      },
-      "E": {
-          "item": "minecraft:golden_carrot"
-      },
-      "Z": {
-          "item": "minecraft:glistering_melon_slice"
-      }
+      "#": "minecraft:echo_shard",
+      "S": "minecraft:sweet_berries",
+      "H": "minecraft:honeycomb",
+      "G": "minecraft:glass_bottle",
+      "E": "minecraft:golden_carrot",
+      "Z": "minecraft:glistering_melon_slice"
   },
     "result": {
-      "id": "minecraft:honey_bottle",
+      "id": "minecraft:stone_pickaxe",
       "count": 1,
       "components": {
+        "!minecraft:damage":{},
+          "!minecraft:max_damage":{},
+          "!minecraft:enchantable":{},
+          "!minecraft:tool":{},
+          "!minecraft:attribute_modifiers":{},
         "minecraft:custom_data": {"healthnectar":1,"ss.statitem":1},
-        "minecraft:max_stack_size": 1,
+        "minecraft:item_model": "minecraft:honey_bottle",
+        "minecraft:max_stack_size": 4,
         "minecraft:food": {
-          "nutrition": 1,
-          "saturation": 1,
-          "can_always_eat": true,
-          "eat_seconds": 3,
-          "effects": [
-            {
-              "effect": {
-                "id": "minecraft:nausea",
-                "amplifier": 100,
-                "duration": 60,
-                "show_particles": false,
-                "show_icon": false
-              },
-              "probability": 1
-            }
-          ]
-        },
+            "nutrition": 1,
+            "saturation": 1,
+            "can_always_eat": true
+          },
+          "minecraft:consumable": {
+        "consume_seconds": 3,
+        "animation": "drink",
+        "sound": "entity.generic.drink",
+        "has_consume_particles": false
+          },
+          "minecraft:use_remainder": {
+            "id": "minecraft:glass_bottle",
+            "count": 1
+          },
         "minecraft:item_name": "{\"text\":\"Royal Honey\",\"color\":\"#EAC435\"}",
         "minecraft:enchantment_glint_override": true,
         "minecraft:rarity": "epic",
@@ -57,21 +48,8 @@
           "{\"text\":\"+2 Health\",\"italic\":false,\"color\":\"#345995\"}",
           "{\"text\":\"-3 Armor\",\"italic\":false,\"color\":\"#E83151\"}",
           "{\"text\":\"sanwichstats\",\"italic\":false,\"color\":\"#ac2c82\"}"
-        ],
-        "minecraft:attribute_modifiers": {
-          "modifiers": [
-            {
-              "id": "noreach",
-              "type": "minecraft:player.block_interaction_range",
-              "amount": -100,
-              "operation": "add_value",
-              "slot": "any"
-            }
-          ]
-        ,
-          "show_in_tooltip": false
-        }
-      }
+        ]
     }
   }
+}
   

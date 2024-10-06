@@ -1,0 +1,4 @@
+{
+	"death.attack.stupid": "%1$s died of stupidity.",
+	"death.attack.stupid.player": "%1$s died of stupidity while being killed by %2$s."
+}

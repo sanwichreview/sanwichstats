@@ -6,49 +6,35 @@
         "ASA"
     ],
     "key": {
-        "#": {
-            "item": "minecraft:experience_bottle"
-        },
-        "P": {
-            "item": "minecraft:piston"
-        },
-        "W": {
-            "item": "minecraft:wheat"
-        },
-        "E": {
-            "item": "minecraft:enchanted_golden_apple"
-        },
-        "A": {
-            "item": "minecraft:apple"
-        },
-        "S": {
-            "item": "minecraft:sugar"
-        }
+        "#": "minecraft:experience_bottle",
+        "P": "minecraft:piston",
+        "W": "minecraft:wheat",
+        "E": "minecraft:enchanted_golden_apple",
+        "A": "minecraft:apple",
+        "S": "minecraft:sugar"
     },
   "result": {
-      "id": "minecraft:pumpkin_pie",
+      "id": "minecraft:stone_pickaxe",
       "components": {
+        "!minecraft:damage":{},
+          "!minecraft:max_damage":{},
+          "!minecraft:enchantable":{},
+          "!minecraft:tool":{},
+          "!minecraft:attribute_modifiers":{},
         "minecraft:custom_data": {"blockreachpie":1,"ss.statitem":1,"ss.nohead":1},
-        "minecraft:custom_model_data": 9290001,
+        "minecraft:item_model": "sanwichstats:blockreachpie",
         "minecraft:max_stack_size": 4,
         "minecraft:food": {
-          "nutrition": 1,
-          "saturation": 1,
-          "can_always_eat": true,
-          "eat_seconds": 3,
-          "effects": [
-            {
-              "effect": {
-                "id": "minecraft:nausea",
-                "amplifier": 1,
-                "duration": 60,
-                "show_particles": false,
-                "show_icon": false
-              },
-              "probability": 1
-            }
-          ]
-        },
+            "nutrition": 1,
+            "saturation": 1,
+            "can_always_eat": true
+          },
+          "minecraft:consumable": {
+        "consume_seconds": 3,
+        "animation": "eat",
+        "sound": "entity.strider.eat",
+        "has_consume_particles": true
+          },
         "minecraft:item_name": "{\"text\":\"Extendo-Apple Pie\",\"color\":\"#EAC435\"}",
         "minecraft:enchantment_glint_override": true,
         "minecraft:rarity": "epic",

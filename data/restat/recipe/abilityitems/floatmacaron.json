@@ -6,67 +6,49 @@
             "FGP"
         ],
         "key": {
-            "#": {
-                "item": "minecraft:echo_shard"
-            },
-            "E": {
-                "item": "minecraft:experience_bottle"
-            },
-            "I": {
-                "item": "minecraft:egg"
-            },
-            "N": {
-                "item": "minecraft:nether_star"
-            },
-            "S": {
-                "item": "minecraft:sugar"
-            },
-            "F": {
-                "item": "minecraft:feather"
-            },
-            "G": {
-                "item": "minecraft:ghast_tear"
-            },
-            "P": {
-                "item": "minecraft:phantom_membrane"
-            }
+            "#": "minecraft:echo_shard",
+            "E": "minecraft:experience_bottle",
+            "I": "minecraft:egg",
+            "N": "minecraft:nether_star",
+            "S": "minecraft:sugar",
+            "F": "minecraft:feather",
+            "G": "minecraft:ghast_tear",
+            "P": "minecraft:phantom_membrane"
         },
 "result": {
-    "id": "minecraft:cookie",
-    "count": 1,
-    "components": {
+        "id": "minecraft:stone_pickaxe",
+        "count":1,
+        "components": {
+          "!minecraft:damage":{},
+          "!minecraft:max_damage":{},
+          "!minecraft:enchantable":{},
+          "!minecraft:tool":{},
+          "!minecraft:attribute_modifiers":{},
       "minecraft:custom_data": {"floatmacaron":1,"ss.majorabilityitem":1,"ss.statitem":1},
       "minecraft:max_stack_size": 4,
       "minecraft:food": {
-        "nutrition": 1,
-        "saturation": 1,
-        "can_always_eat": true,
-        "eat_seconds": 3,
-        "effects": [
-          {
-            "effect": {
-              "id": "minecraft:nausea",
-              "amplifier": 100,
-              "duration": 60,
-              "show_particles": false,
-              "show_icon": false
-            },
-            "probability": 1
-          }
-        ]
-      },
+            "nutrition": 1,
+            "saturation": 1,
+            "can_always_eat": true
+          },
+          "minecraft:consumable": {
+        "consume_seconds": 3,
+        "animation": "eat",
+        "sound": "entity.strider.eat",
+        "has_consume_particles": true
+          },
       "minecraft:item_name": "{\"text\":\"Weightless Macaron\",\"color\":\"#EAC435\"}",
       "minecraft:enchantment_glint_override": true,
       "minecraft:rarity": "epic",
       "minecraft:lore": [
         "{\"text\":\"Somehow, It's completely weightless.\",\"color\":\"#60495A\"}",
-        "{\"text\":\"Major Ability: Levitation (double-crouch to ascend, crouch to descend)\",\"italic\":false,\"color\":\"#56E39F\"}",
+        "{\"text\":\"Major Ability: Levitation (double-jump to activate)\",\"italic\":false,\"color\":\"#56E39F\"}",
         "{\"text\":\"-10 Health\",\"italic\":false,\"color\":\"#E83151\"}",
         "{\"text\":\"☹ You cannot wear elytra!\",\"italic\":false,\"color\":\"#E83151\"}",
         "{\"text\":\"☹ You are unaffected by slow falling effects.\",\"italic\":false,\"color\":\"#E83151\"}",
         "{\"text\":\"sanwichstats\",\"italic\":false,\"color\":\"#ac2c82\"}"
       ],
-      "minecraft:custom_model_data": 9290001,
+      "minecraft:item_model": "sanwichstats:floatmacaron",
       "minecraft:hide_additional_tooltip": {}
     }
   }

@@ -7,21 +7,11 @@
       "DND"
     ],
     "key": {
-      "#": {
-        "item": "minecraft:amethyst_shard"
-      },
-      "N": {
-        "item": "minecraft:emerald"
-      },
-      "C": {
-        "item": "minecraft:chorus_fruit"
-      },
-      "E": {
-        "item": "minecraft:echo_shard"
-      },
-      "D": {
-        "item": "minecraft:diamond"
-      }
+      "#": "minecraft:amethyst_shard",
+      "N": "minecraft:emerald",
+      "C": "minecraft:chorus_fruit",
+      "E": "minecraft:echo_shard",
+      "D": "minecraft:diamond"
     },
     "result": {
       "id": "minecraft:echo_shard",

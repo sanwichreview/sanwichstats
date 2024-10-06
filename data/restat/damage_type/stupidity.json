@@ -1,0 +1,8 @@
+{
+    "death_message_type": "default",
+    "message_id": "stupid",
+    "exhaustion": 0.1,
+    "scaling": "never",
+    "effects": "freezing"
+  }
+  

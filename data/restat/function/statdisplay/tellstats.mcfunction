@@ -1,8 +1,9 @@
 
 tag @s add ss.displayStats
 
-scoreboard players operation @s ss.mathTemp = @s ss.health
-scoreboard players operation @s ss.mathTemp += @s ss.healthBonus
+execute store result score @s ss.mathTemp run attribute @s max_health base get 1
+execute store result score @s ss.intTemp run attribute @s max_health modifier value get ss.health 1
+scoreboard players operation @s ss.mathTemp += @s ss.intTemp
 
 execute store result storage restat:tellstats tellstats.healthval double 1 run scoreboard players get @s ss.mathTemp
 execute as @s[scores={ss.mathTemp=20}] run data modify storage restat:tellstats tellstats.healthclr set value gray
@@ -11,24 +12,35 @@ execute as @s[scores={ss.mathTemp=11..19}] run data modify storage restat:tellst
 execute as @s[scores={ss.mathTemp=1..10}] run data modify storage restat:tellstats tellstats.healthclr set value red
 
 
-execute store result storage restat:tellstats tellstats.armorval double 1 run scoreboard players get @s ss.armor 
-execute as @s[scores={ss.armor=0}] run data modify storage restat:tellstats tellstats.armorclr set value gray
-execute as @s[scores={ss.armor=1..10}] run data modify storage restat:tellstats tellstats.armorclr set value "#3b8f4e"
-execute as @s[scores={ss.armor=11..}] run data modify storage restat:tellstats tellstats.armorclr set value dark_green
-execute as @s[scores={ss.armor=-10..-1}] run data modify storage restat:tellstats tellstats.armorclr set value gold
-execute as @s[scores={ss.armor=-20..-11}] run data modify storage restat:tellstats tellstats.armorclr set value red
+execute store result score @s ss.mathTemp run attribute @s armor base get 1
+execute store result score @s ss.intTemp run attribute @s armor modifier value get ss.armor 1
+scoreboard players operation @s ss.mathTemp += @s ss.intTemp
+
+execute store result storage restat:tellstats tellstats.armorval double 1 run scoreboard players get @s ss.mathTemp 
+execute as @s[scores={ss.mathTemp=0}] run data modify storage restat:tellstats tellstats.armorclr set value gray
+execute as @s[scores={ss.mathTemp=1..10}] run data modify storage restat:tellstats tellstats.armorclr set value "#3b8f4e"
+execute as @s[scores={ss.mathTemp=11..}] run data modify storage restat:tellstats tellstats.armorclr set value dark_green
+execute as @s[scores={ss.mathTemp=-10..-1}] run data modify storage restat:tellstats tellstats.armorclr set value gold
+execute as @s[scores={ss.mathTemp=-20..-11}] run data modify storage restat:tellstats tellstats.armorclr set value red
 
 
-execute store result storage restat:tellstats tellstats.sizeval double .1 run scoreboard players get @s ss.size 
-execute as @s[scores={ss.size=10}] run data modify storage restat:tellstats tellstats.sizeclr set value gray
-execute as @s[scores={ss.size=4..9}] run data modify storage restat:tellstats tellstats.sizeclr set value "#3b8f4e"
-execute as @s[scores={ss.size=11..16}] run data modify storage restat:tellstats tellstats.sizeclr set value gold
-execute as @s[scores={ss.size=17..}] run data modify storage restat:tellstats tellstats.sizeclr set value red
-execute as @s[scores={ss.size=..3}] run data modify storage restat:tellstats tellstats.sizeclr set value red
+
+execute store result score @s ss.mathTemp run attribute @s scale base get 10
+execute store result score @s ss.intTemp run attribute @s scale modifier value get ss.size 10
+scoreboard players operation @s ss.mathTemp += @s ss.intTemp
+
+execute store result storage restat:tellstats tellstats.sizeval double .1 run scoreboard players get @s ss.mathTemp 
+execute as @s[scores={ss.mathTemp=10}] run data modify storage restat:tellstats tellstats.sizeclr set value gray
+execute as @s[scores={ss.mathTemp=4..9}] run data modify storage restat:tellstats tellstats.sizeclr set value "#3b8f4e"
+execute as @s[scores={ss.mathTemp=11..16}] run data modify storage restat:tellstats tellstats.sizeclr set value gold
+execute as @s[scores={ss.mathTemp=17..}] run data modify storage restat:tellstats tellstats.sizeclr set value red
+execute as @s[scores={ss.mathTemp=..3}] run data modify storage restat:tellstats tellstats.sizeclr set value red
 
 
-scoreboard players operation @s ss.mathTemp = @s ss.damage
-scoreboard players operation @s ss.mathTemp += @s ss.damageBonus
+
+execute store result score @s ss.mathTemp run attribute @s attack_damage base get 10
+execute store result score @s ss.intTemp run attribute @s attack_damage modifier value get ss.damage 10
+scoreboard players operation @s ss.mathTemp += @s ss.intTemp
 scoreboard players set $10 ss.intTemp 10
 scoreboard players operation @s ss.intTemp = @s ss.mathTemp
 scoreboard players operation @s ss.mathTemp %= $10 ss.intTemp 
@@ -42,8 +54,9 @@ execute as @s[scores={ss.intTemp=1..9}] run data modify storage restat:tellstats
 execute as @s[scores={ss.intTemp=..0}] run data modify storage restat:tellstats tellstats.damageclr set value red
 
 
-scoreboard players operation @s ss.mathTemp = @s ss.speed
-scoreboard players operation @s ss.mathTemp += @s ss.speedBonus
+execute store result score @s ss.mathTemp run attribute @s movement_speed base get 1000
+execute store result score @s ss.intTemp run attribute @s movement_speed modifier value get ss.speed 1000
+scoreboard players operation @s ss.mathTemp += @s ss.intTemp
 scoreboard players set $100 ss.intTemp 100
 scoreboard players operation @s ss.intTemp = @s ss.mathTemp
 scoreboard players operation @s ss.mathTemp %= $100 ss.intTemp 
@@ -57,8 +70,9 @@ execute as @s[scores={ss.intTemp=80..99}] run data modify storage restat:tellsta
 execute as @s[scores={ss.intTemp=..79}] run data modify storage restat:tellstats tellstats.speedclr set value red
 
 
-scoreboard players operation @s ss.mathTemp = @s ss.blockReach
-scoreboard players operation @s ss.mathTemp += @s ss.blockReachBonus
+execute store result score @s ss.mathTemp run attribute @s block_interaction_range base get 10
+execute store result score @s ss.intTemp run attribute @s block_interaction_range modifier value get ss.blockreach 10
+scoreboard players operation @s ss.mathTemp += @s ss.intTemp
 scoreboard players set $10 ss.intTemp 10
 scoreboard players operation @s ss.intTemp = @s ss.mathTemp
 scoreboard players operation @s ss.mathTemp %= $10 ss.intTemp 
@@ -72,8 +86,9 @@ execute as @s[scores={ss.intTemp=35..44}] run data modify storage restat:tellsta
 execute as @s[scores={ss.intTemp=..34}] run data modify storage restat:tellstats tellstats.blockreachclr set value red
 
 
-scoreboard players operation @s ss.mathTemp = @s ss.entityReach
-scoreboard players operation @s ss.mathTemp += @s ss.entityReachBonus
+execute store result score @s ss.mathTemp run attribute @s entity_interaction_range base get 10
+execute store result score @s ss.intTemp run attribute @s entity_interaction_range modifier value get ss.entityreach 10
+scoreboard players operation @s ss.mathTemp += @s ss.intTemp
 scoreboard players set $10 ss.intTemp 10
 scoreboard players operation @s ss.intTemp = @s ss.mathTemp
 scoreboard players operation @s ss.mathTemp %= $10 ss.intTemp
@@ -88,8 +103,9 @@ execute as @s[scores={ss.intTemp=25..29}] run data modify storage restat:tellsta
 execute as @s[scores={ss.intTemp=..24}] run data modify storage restat:tellstats tellstats.entityreachclr set value red
 
 
-scoreboard players operation @s ss.mathTemp = @s ss.mineSpeed
-scoreboard players operation @s ss.mathTemp += @s ss.mineSpeedBonus
+execute store result score @s ss.mathTemp run attribute @s block_break_speed base get 10
+execute store result score @s ss.intTemp run attribute @s block_break_speed modifier value get ss.minespeed 10
+scoreboard players operation @s ss.mathTemp += @s ss.intTemp
 scoreboard players set $10 ss.intTemp 10
 scoreboard players operation @s ss.intTemp = @s ss.mathTemp
 scoreboard players operation @s ss.mathTemp %= $10 ss.intTemp 
@@ -105,8 +121,9 @@ execute as @s[scores={ss.intTemp=..4}] run data modify storage restat:tellstats 
 
 
 
-scoreboard players operation @s ss.mathTemp = @s ss.attackSpeed
-scoreboard players operation @s ss.mathTemp += @s ss.attackSpeedBonus
+execute store result score @s ss.mathTemp run attribute @s attack_speed base get 10
+execute store result score @s ss.intTemp run attribute @s attack_speed modifier value get ss.attackspeed 10
+scoreboard players operation @s ss.mathTemp += @s ss.intTemp
 scoreboard players set $10 ss.intTemp 10
 scoreboard players operation @s ss.intTemp = @s ss.mathTemp
 scoreboard players operation @s ss.mathTemp %= $10 ss.intTemp 

@@ -7,14 +7,16 @@ playsound entity.enderman.teleport master @a ~ ~ ~ .3 1.2
 particle minecraft:wax_off ~ ~ ~ .5 1 .5 1 40 force @a
 effect give @s slow_falling 1 0 true 
 effect give @s weakness 4 0 true
-damage @s[scores={ss.teleportCooldown=1..}] 6 magic by @s from @s
+damage @s[scores={ss.teleportCooldown=1..}] 6 restat:stupidity by @s from @s
 scoreboard players set @s ss.teleportCooldown 80
 #scoreboard players set $y player_motion.api.launch 6000
 execute as @s at @s if block ~ ~-1 ~ #restat:rayignore run scoreboard players set $y player_motion.api.launch 11000
 execute as @s at @s if block ~ ~-1 ~ #restat:rayignore run effect give @s slow_falling 3 0 true 
 execute as @s at @s if block ~ ~-1 ~ #restat:rayignore run execute as @s at @s run function player_motion:api/launch_xyz
+function restat:abilities/teleport/unfloat
 $kill @e[type=item_frame,tag=$(id),tag=ss.tp]
 
 #just in case
+
 tag @s remove ss.tpRangeClick
 

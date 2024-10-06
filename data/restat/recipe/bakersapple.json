@@ -6,21 +6,11 @@
       "GLG"
     ],
     "key": {
-      "#": {
-        "item": "minecraft:blaze_powder"
-      },
-      "D": {
-        "item": "minecraft:diamond_block"
-      },
-      "G": {
-        "item": "minecraft:gold_block"
-      },
-      "N": {
-        "item": "minecraft:golden_apple"
-      },
-      "L": {
-        "item": "minecraft:lava_bucket"
-      }
+      "#": "minecraft:blaze_powder",
+      "D": "minecraft:diamond_block",
+      "G": "minecraft:gold_block",
+      "N": "minecraft:golden_apple",
+      "L": "minecraft:lava_bucket"
     },
     "result": {
       "id": "minecraft:enchanted_golden_apple",
@@ -34,8 +24,8 @@
           "{\"text\":\"For use in recipes only!\",\"color\":\"#625834\"}",
           "{\"text\":\"sanwichstats\",\"italic\":false,\"color\":\"#ac2c82\"}"
         ],
-        "!minecraft:food": {}
-      }
+        "!minecraft:consumable": {}
     }
   }
+}
   
