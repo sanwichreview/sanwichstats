@@ -1,0 +1,97 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "EPE",
+        "TWS"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:echo_shard"
+        },
+        "E": {
+            "item": "minecraft:experience_bottle"
+        },
+        "P": {
+            "item": "minecraft:glass_bottle"
+        },
+        "T": {
+            "item": "minecraft:torchflower_seeds"
+        },
+        "W": {
+            "item": "minecraft:wheat"
+        },
+        "S": {
+            "item": "minecraft:sweet_berries"
+        }
+    },
+    "result": {
+        "id": "minecraft:potion",
+        "components": {
+          "minecraft:custom_data": {"burrowerbrew":1,"ss.statitem":1},
+          "minecraft:max_stack_size": 1,
+          "minecraft:food": {
+            "nutrition": 1,
+            "saturation": 1,
+            "can_always_eat": true,
+            "eat_seconds": 3,
+            "effects": [
+              {
+                "effect": {
+                  "id": "minecraft:night_vision",
+                  "amplifier": 1,
+                  "duration": 60,
+                  "show_particles": false,
+                  "show_icon": false
+                },
+                "probability": 1
+              },
+              {
+                "effect": {
+                  "id": "minecraft:nausea",
+                  "amplifier": 1,
+                  "duration": 60,
+                  "show_particles": false,
+                  "show_icon": false
+                },
+                "probability": 1
+              }
+            ]
+          },
+          "minecraft:item_name": "{\"text\":\"Burrower's Brew\",\"color\":\"#EAC435\"}",
+          "minecraft:enchantment_glint_override": true,
+          "minecraft:rarity": "epic",
+          "minecraft:lore": [
+            "{\"text\":\"Made with Miner's Malt and Hasty Hops!\",\"color\":\"#60495A\"}",
+            "{\"text\":\"+0.7 Mining Speed\",\"italic\":false,\"color\":\"#345995\"}",
+            "{\"text\":\"-0.1 Speed\",\"italic\":false,\"color\":\"#E83151\"}",
+            "{\"text\":\"sanwichstats\",\"italic\":false,\"color\":\"#ac2c82\"}"
+          ],
+          "minecraft:potion_contents": {
+            "potion": "minecraft:water",
+            "custom_color": 1839105,
+            "custom_effects": [
+              {
+                "id": "minecraft:darkness",
+                "amplifier": 0,
+                "duration": 100
+              }
+            ]
+          },
+          "minecraft:hide_additional_tooltip": {},
+          "minecraft:attribute_modifiers": {
+            "modifiers": [
+              {
+                "id": "noreach",
+                "type": "minecraft:player.block_interaction_range",
+                "amount": -100,
+                "operation": "add_value",
+                "slot": "any"
+              }
+            ]
+          ,
+            "show_in_tooltip": false
+          }
+        }
+      }
+  }

@@ -1,0 +1,48 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "nog",
+    "pattern": [
+        " # ",
+        "SEG",
+        " B "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:sweet_berries"
+        },
+        "S": {
+            "item": "minecraft:sugar"
+        },
+        "E": {
+            "item": "minecraft:egg"
+        },
+        "G": {
+            "item": "minecraft:gunpowder"
+        },
+        "B": {
+            "item": "minecraft:bucket"
+        }
+    },
+    "result": {
+        "id": "minecraft:milk_bucket",
+        "count":1,
+        "components": {
+          "minecraft:custom_data": {"nog":1,"ss.resetitem":1},
+          "minecraft:custom_model_data": 9290001,
+          "minecraft:food": {
+            "nutrition": 1,
+            "saturation": 1,
+            "can_always_eat": true,
+            "eat_seconds": 3
+          },
+          "minecraft:item_name": "{\"text\":\"Noah Nog\",\"color\":\"#EAC435\"}",
+          "minecraft:enchantment_glint_override": true,
+          "minecraft:rarity": "epic",
+          "minecraft:lore": [
+            "{\"text\":\"mmm... nog...\",\"color\":\"#60495A\"}",
+            "{\"text\":\"Resets all stats and abilities.\",\"italic\":false,\"color\":\"#EDF2F4\"}",
+            "{\"text\":\"sanwichstats\",\"italic\":false,\"color\":\"#ac2c82\"}"
+          ]
+        }
+      }
+}

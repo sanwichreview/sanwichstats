@@ -1,0 +1,67 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+      "#N#",
+      "ETE",
+      "FBF"
+  ],
+  "key": {
+      "#": {
+          "item": "minecraft:echo_shard"
+      },
+      "N": {
+          "item": "minecraft:nether_star"
+      },
+      "E": {
+          "item": "minecraft:experience_bottle"
+      },
+      "T": {
+          "item": "minecraft:torchflower_seeds"
+      },
+      "F": {
+          "item": "minecraft:firework_rocket"
+      },
+      "B": {
+          "item": "minecraft:tnt"
+      }
+  },
+"result": {
+"id": "minecraft:cookie",
+"count": 1,
+"components": {
+  "minecraft:custom_data": {"instantpopcorn":1,"ss.majorabilityitem":1,"ss.statitem":1},
+  "minecraft:max_stack_size": 4,
+  "minecraft:food": {
+    "nutrition": 1,
+    "saturation": 1,
+    "can_always_eat": true,
+    "eat_seconds": 3,
+    "effects": [
+      {
+        "effect": {
+          "id": "minecraft:nausea",
+          "amplifier": 100,
+          "duration": 60,
+          "show_particles": false,
+          "show_icon": false
+        },
+        "probability": 1
+      }
+    ]
+  },
+  "minecraft:item_name": "{\"text\":\"Instant Popcorn\",\"color\":\"#EAC435\"}",
+  "minecraft:enchantment_glint_override": true,
+  "minecraft:rarity": "epic",
+  "minecraft:lore": [
+    "{\"text\":\"This popcorn is instant! Laws of general relativity be damned.\",\"color\":\"#60495A\"}",
+    "{\"text\":\"Major Ability: Teleporation (Double-crouch to charge, uncrouch to teleport)\",\"italic\":false,\"color\":\"#56E39F\"}",
+    "{\"text\":\"-8 Health\",\"italic\":false,\"color\":\"#E83151\"}",
+    "{\"text\":\"☹ You cannot wear elytra!\",\"italic\":false,\"color\":\"#E83151\"}",
+    "{\"text\":\"☹ The popping can be rather startling.\",\"italic\":false,\"color\":\"#E83151\"}",
+    "{\"text\":\"sanwichstats\",\"italic\":false,\"color\":\"#ac2c82\"}"
+  ],
+  "minecraft:custom_model_data": 9290002,
+  "minecraft:hide_additional_tooltip": {}
+}
+}
+}

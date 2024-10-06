@@ -1,0 +1,69 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "adultgummy",
+    "pattern": [
+        "#E#",
+        "FSF",
+        "TMH"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:experience_bottle"
+        },
+        "E": {
+            "item": "minecraft:enchanted_golden_apple"
+        },
+        "F": {
+            "item": "minecraft:fermented_spider_eye"
+        },
+        "S": {
+            "item": "minecraft:sugar"
+        },
+        "T": {
+            "item": "minecraft:torchflower"
+        },
+        "M": {
+            "item": "minecraft:large_fern"
+        },
+        "H": {
+            "item": "minecraft:hanging_roots"
+        }
+    },
+    "result": {
+        "id": "minecraft:slime_ball",
+        "count":2,
+        "components": {
+          "minecraft:custom_data": {"adultgummy":1,"ss.statitem":1},
+          "minecraft:custom_model_data": 9290001,
+          "minecraft:max_stack_size": 4,
+          "minecraft:food": {
+            "nutrition": 1,
+            "saturation": 1,
+            "can_always_eat": true,
+            "eat_seconds": 3,
+            "effects": [
+              {
+                "effect": {
+                  "id": "minecraft:nausea",
+                  "amplifier": 1,
+                  "duration": 300,
+                  "show_particles": false,
+                  "show_icon": false
+                },
+                "probability": 1
+              }
+            ]
+          },
+          "minecraft:item_name": "{\"text\":\"Adult Gummy\",\"color\":\"#EAC435\"}",
+          "minecraft:enchantment_glint_override": true,
+          "minecraft:rarity": "epic",
+          "minecraft:lore": [
+            "{\"text\":\"I prefer these- I have issues with my 'joints' :)\",\"color\":\"#60495A\"}",
+            "{\"text\":\"+2 Health\",\"italic\":false,\"color\":\"#345995\"}",
+            "{\"text\":\"-0.5 Damage\",\"italic\":false,\"color\":\"#E83151\"}",
+            "{\"text\":\"☹ Coconut flavor.\",\"italic\":false,\"color\":\"#E83151\"}",
+            "{\"text\":\"sanwichstats\",\"italic\":false,\"color\":\"#ac2c82\"}"
+          ]
+        }
+      }
+}

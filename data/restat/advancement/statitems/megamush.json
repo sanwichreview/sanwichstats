@@ -1,0 +1,19 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "player": [],
+          "item": {
+            "components": {
+              "minecraft:custom_data": {"megamush":1,"ss.statitem":1}
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "restat:items/statitems/megamush/consume"
+    }
+  }
+  

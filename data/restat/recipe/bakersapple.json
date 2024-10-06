@@ -1,0 +1,41 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "#D#",
+      "GNG",
+      "GLG"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:blaze_powder"
+      },
+      "D": {
+        "item": "minecraft:diamond_block"
+      },
+      "G": {
+        "item": "minecraft:gold_block"
+      },
+      "N": {
+        "item": "minecraft:golden_apple"
+      },
+      "L": {
+        "item": "minecraft:lava_bucket"
+      }
+    },
+    "result": {
+      "id": "minecraft:enchanted_golden_apple",
+      "components": {
+        "minecraft:custom_data": {},
+        "minecraft:max_stack_size": 16,
+        "minecraft:item_name": "{\"text\":\"Baker's Enchanted Golden Apple\",\"color\":\"#EAC435\"}",
+        "minecraft:enchantment_glint_override": true,
+        "minecraft:rarity": "epic",
+        "minecraft:lore": [
+          "{\"text\":\"For use in recipes only!\",\"color\":\"#625834\"}",
+          "{\"text\":\"sanwichstats\",\"italic\":false,\"color\":\"#ac2c82\"}"
+        ],
+        "!minecraft:food": {}
+      }
+    }
+  }
+  

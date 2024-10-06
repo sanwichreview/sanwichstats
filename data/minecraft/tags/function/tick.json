@@ -1,0 +1,6 @@
+{
+    "values":   [
+            "restat:tick",
+            "player_motion:internal/technical/tick"
+    ]
+}

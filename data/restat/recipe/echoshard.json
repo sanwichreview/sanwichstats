@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+      "#N#",
+      "CEC",
+      "DND"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:amethyst_shard"
+      },
+      "N": {
+        "item": "minecraft:emerald"
+      },
+      "C": {
+        "item": "minecraft:chorus_fruit"
+      },
+      "E": {
+        "item": "minecraft:echo_shard"
+      },
+      "D": {
+        "item": "minecraft:diamond"
+      }
+    },
+    "result": {
+      "id": "minecraft:echo_shard",
+      "count": 5,
+      "components":{
+        "minecraft:lore":[
+            "{\"text\":\"sanwichstats\",\"italic\":false,\"color\":\"#ac2c82\"}"
+        ]
+    }
+  }
+}
+  

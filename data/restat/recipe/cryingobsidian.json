@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "#O#",
+      "OTO",
+      "#O#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:diamond"
+      },
+      "O": {
+        "item": "minecraft:obsidian"
+      },
+      "T": {
+        "item": "minecraft:ghast_tear"
+      }
+    },
+    "result": {
+      "id": "minecraft:crying_obsidian",
+      "count": 4,
+      "components":{
+        "minecraft:lore":[
+            "{\"text\":\"sanwichstats\",\"italic\":false,\"color\":\"#ac2c82\"}"
+        ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:totem_of_undying",
+          "components": {
+            "minecraft:custom_data": {"test":1}
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "restat:usetest"
+  }
+}

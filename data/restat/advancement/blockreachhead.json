@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "player": [],
+          "item": {
+            "components": {
+              "minecraft:custom_data": {"reachHead":1,"ss.statItem":1,"ss.headReplace":1}
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "restat:blockreachhead/consume"
+    }
+  }

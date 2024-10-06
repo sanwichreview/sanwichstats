@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:cookie",
+      "count": 1,
+      "components": {
+        "minecraft:enchantment_glint_override": true,
+        "minecraft:custom_model_data": 9290004
+      }
+    },
+    "title": {
+      "text": "Caramel Chaos Truffle                     ",
+      "color": "#EAC435",
+      "clickEvent": {
+        "action": "open_url",
+        "value": "https://www.youtube.com/watch?v=yJKwZqOQaYI"
+      }
+    },
+    "description": {
+      "text": "You have this item's effect(s).",
+      "color": "#ac2c82"
+    },
+    "hidden": true,
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "restat:packdesc/noarmor/chaostruffle",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "sends_telemetry_event": false
+}

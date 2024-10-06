@@ -1,0 +1,1 @@
+execute at @s run playsound minecraft:block.copper_bulb.turn_on master @s ~ ~ ~ 1 0.5

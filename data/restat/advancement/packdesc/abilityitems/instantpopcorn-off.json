@@ -1,0 +1,57 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:cookie",
+        "count": 1,
+        "components": {
+          "minecraft:enchantment_glint_override": true,
+          "minecraft:custom_model_data": 9290002
+        }
+      },
+      "title": {
+        "text": "Instant Popcorn                       ",
+        "color": "#EAC435",
+        "clickEvent": {
+          "action": "open_url",
+          "value": "https://www.youtube.com/watch?v=yJKwZqOQaYI"
+        }
+      },
+      "description": {
+        "text": "Major Ability: Teleporation (Double-crouch to charge, uncrouch to teleport)",
+        "color": "#345995",
+        "extra": [
+            {
+              "text": "\n-8 Health",
+              "color": "#E83151"
+          },
+          {
+            "text": "\n☹ You cannot wear elytra!",
+            "color": "#E83151"
+        },
+        {
+          "text": "\n☹ The popping can be rather startling.",
+          "color": "#E83151"
+      },
+          {
+            "text": "\n\nThis popcorn is instant! Laws of general relativity be damned.",
+            "color": "#60495A"
+        },
+        {
+          "text": "\n\nTeleporting causes weakness \n1s charge, 4s cooldown.\nThere is a damage penalty for teleporting during the cooldown.\nUse the clicks to tell if your target is in range.\nIf you teleport next to a wall, you will launch ~5 blocks!\nHave fun!",
+          "color": "#EDF2F4"
+      }
+        ]
+      },
+      "hidden":true,
+      "frame": "goal",
+      "show_toast": false,
+      "announce_to_chat": false
+    },
+    "parent": "restat:packdesc/abilityitems/abilityitems",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "sends_telemetry_event": false
+}

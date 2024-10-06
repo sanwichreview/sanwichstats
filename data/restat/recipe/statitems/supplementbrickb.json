@@ -1,0 +1,68 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "supplementbrick",
+  "pattern": [
+      "#N#",
+      "IBI",
+      "RMD"
+  ],
+  "key": {
+      "#": {
+          "item": "minecraft:echo_shard"
+      },
+      "N": {
+          "item": "minecraft:netherite_scrap"
+      },
+      "I": {
+          "item": "minecraft:raw_iron"
+      },
+      "B": {
+          "item": "minecraft:brick"
+      },
+      "R": {
+          "item": "minecraft:redstone"
+      },
+      "M": {
+          "item": "minecraft:blaze_powder"
+      },
+      "D": {
+          "item": "minecraft:dried_kelp"
+      }
+  },
+    "result": {
+      "id": "minecraft:nether_brick",
+      "components": {
+        "minecraft:custom_data": {"supplements":1,"ss.statitem":1},
+        "minecraft:custom_model_data": 9290001,
+        "minecraft:max_stack_size": 4,
+        "minecraft:item_name": "{\"text\":\"Supplement Brick\",\"color\":\"#EAC435\"}",
+        "minecraft:enchantment_glint_override": true,
+        "minecraft:rarity": "epic",
+        "minecraft:lore": [
+          "{\"text\":\"High in vitamins. High in iron. Red flavor!\",\"color\":\"#60495A\"}",
+          "{\"text\":\"+3 Armor\",\"color\":\"#345995\",\"italic\":false}",
+          "{\"text\":\"-0.5 Damage\",\"color\":\"#E83151\",\"italic\":false}",
+          "{\"text\":\"sanwichstats\",\"italic\":false,\"color\":\"#ac2c82\"}"
+        ],
+        "minecraft:food": {
+          "nutrition": 1,
+          "saturation": 1,
+          "can_always_eat": true,
+          "eat_seconds": 3,
+          "effects": [
+            {
+              "effect": {
+                "id": "minecraft:nausea",
+                "amplifier": 100,
+                "duration": 60,
+                "show_particles": false,
+                "show_icon": false
+              },
+              "probability": 1
+            }
+          ]
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,95 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+      "#EX",
+      "SCM",
+      "BKG"
+  ],
+  "key": {
+      "#": {
+          "item": "minecraft:experience_bottle"
+      },
+      "X": {
+          "item": "minecraft:echo_shard"
+      },
+      "E": {
+          "item": "minecraft:enchanted_golden_apple"
+      },
+      "S": {
+          "item": "minecraft:sugar"
+      },
+      "C": {
+          "item": "minecraft:cocoa_beans"
+      },
+      "M": {
+          "item": "minecraft:milk_bucket"
+      },
+      "B": {
+          "item": "minecraft:blaze_powder"
+      },
+      "K": {
+          "item": "minecraft:crying_obsidian"
+      },
+      "G": {
+          "item": "minecraft:glowstone_dust"
+      }
+  },
+      "result": {
+        "id": "minecraft:cookie",
+        "count": 2,
+        "components": {
+          "minecraft:custom_data": {"chaostruffle":1,"ss.statitem":1,"ss.nochest":1},
+          "minecraft:custom_model_data": 9290004,
+          "minecraft:max_stack_size": 4,
+          "minecraft:food": {
+            "nutrition": 1,
+            "saturation": 1,
+            "can_always_eat": true,
+            "eat_seconds": 3,
+            "effects": [
+              {
+                "effect": {
+                  "id": "minecraft:nausea",
+                  "amplifier": 100,
+                  "duration": 60,
+                  "show_particles": false,
+                  "show_icon": false
+                },
+                "probability": 1
+              }
+            ]
+          },
+          "minecraft:item_name": "{\"text\":\"Caramel Chaos Truffle\",\"color\":\"#EAC435\"}",
+          "minecraft:rarity": "epic",
+          "minecraft:lore": [
+              "{\"text\":\"A dense ball of caramel-covered chaos.\",\"color\":\"#60495A\"}",
+              "{\"text\":\"Just like grandma used to make!\",\"color\":\"#60495A\"}",
+              "{\"text\":\"Chaotic: 5 BONUS STATS are chosen randomly (repeats possible) ↓\",\"color\":\"#56E39F\",\"italic\":false}",
+              "{\"text\":\"Eat this again to reroll 🎲\",\"color\":\"#56E39F\",\"italic\":false}",
+              "{\"text\":\"🎰2 Health\",\"color\":\"#345995\",\"italic\":false}",
+              "{\"text\":\"🎰0.5 Damage\",\"color\":\"#345995\",\"italic\":false}",
+              "{\"text\":\"🎰0.1 Speed\",\"color\":\"#345995\",\"italic\":false}",
+              "{\"text\":\"🎰0.7 Mining Speed\",\"color\":\"#345995\",\"italic\":false}",
+              "{\"text\":\"🎰0.5 Range\",\"color\":\"#345995\",\"italic\":false}",
+              "{\"text\":\"🎰1 Block Reach\",\"color\":\"#345995\",\"italic\":false}",
+              "{\"text\":\"🎰0.2 Attack Speed\",\"color\":\"#345995\",\"italic\":false}",
+              "{\"text\":\"☹ No chest armor.\",\"color\":\"#E83151\",\"italic\":false}",
+              "{\"text\":\"sanwichstats\",\"italic\":false,\"color\":\"#ac2c82\"}"
+            ],
+            "minecraft:attribute_modifiers": {
+              "modifiers": [
+                {
+                  "id": "noreach",
+                  "type": "minecraft:player.block_interaction_range",
+                  "amount": -100,
+                  "operation": "add_value",
+                  "slot": "any"
+                }
+              ]
+            ,
+              "show_in_tooltip": false
+            }
+            }
+        }
+      }
+    

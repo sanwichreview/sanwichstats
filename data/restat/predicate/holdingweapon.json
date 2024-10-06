@@ -1,0 +1,22 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "mainhand": {
+          "predicates": {
+            "minecraft:attribute_modifiers": {
+              "modifiers": {
+                "contains": [
+                  {
+                    "attribute": "minecraft:generic.attack_damage"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

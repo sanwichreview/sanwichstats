@@ -1,0 +1,2 @@
+execute store result storage restat:teleport teleport.id int 1 run scoreboard players get @s ss.entID
+execute positioned ~ ~ ~ run function restat:abilities/teleport/teleport with storage restat:teleport teleport 

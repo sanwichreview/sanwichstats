@@ -1,0 +1,95 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#S#",
+        "CBC",
+        "#P#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:echo_shard"
+        },
+        "S": {
+            "item": "minecraft:spyglass"
+        },
+        "C": {
+            "item": "minecraft:sweet_berries"
+        },
+        "B": {
+            "item": "minecraft:brown_mushroom"
+        },
+        "P": {
+            "item": "minecraft:glow_berries"
+        }
+    },
+    "result": {
+      "id": "minecraft:brown_mushroom",
+      "components": {
+        "minecraft:custom_data": {"minimush":1,"ss.statitem":1},
+        "minecraft:custom_model_data": 9290001,
+        "minecraft:max_stack_size": 4,
+        "minecraft:food": {
+          "nutrition": 1,
+          "saturation": 1,
+          "can_always_eat": true,
+          "eat_seconds": 3,
+          "effects": [
+            {
+                "effect": {
+                    "id": "minecraft:nausea",
+                    "amplifier": 100,
+                    "duration": 60,
+                    "show_particles": false,
+                    "show_icon": false
+              },
+              "probability": 1
+            }
+          ]
+        },
+        "minecraft:item_name": "{\"text\":\"Mini Mushroom\",\"color\":\"#EAC435\"}",
+        "minecraft:enchantment_glint_override": true,
+        "minecraft:rarity": "epic",
+        "minecraft:lore": [
+            "{\"text\":\"Makes everything look bigger...\",\"color\":\"#60495A\"}",
+            "{\"text\":\"-0.2 Size\",\"color\":\"#345995\",\"italic\":false}",
+            "{\"text\":\"-2 Health\",\"color\":\"#E83151\",\"italic\":false}",
+            "{\"text\":\"-0.3 Block Reach\",\"color\":\"#E83151\",\"italic\":false}",
+            "{\"text\":\"-0.2 Range\",\"color\":\"#E83151\",\"italic\":false}",
+            "{\"text\":\"-0.05 Speed\",\"color\":\"#E83151\",\"italic\":false}",
+            "{\"text\":\"sanwichstats\",\"italic\":false,\"color\":\"#ac2c82\"}"
+          ],
+          "minecraft:attribute_modifiers": {
+            "modifiers": [
+              {
+                "id": "noreach",
+                "type": "minecraft:player.block_interaction_range",
+                "amount": -100,
+                "operation": "add_value",
+                "slot": "any"
+              }
+            ]
+          ,
+            "show_in_tooltip": false
+          }
+      },
+      "minecraft:attribute_modifiers": {
+        "modifiers": [
+          {
+            "type": "minecraft:player.block_interaction_range",
+            "uuid": [
+              1,
+              2,
+              3,
+              3
+            ],
+            "name": "Block Range",
+            "amount": -20,
+            "operation": "add_value",
+            "slot": "any"
+          }
+        ],
+        "show_in_tooltip": false
+      }
+    }
+  }
+  

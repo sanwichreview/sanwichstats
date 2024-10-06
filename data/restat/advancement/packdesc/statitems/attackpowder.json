@@ -1,0 +1,48 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:sugar",
+        "count": 1,
+        "components": {
+          "minecraft:enchantment_glint_override": true,
+          "minecraft:custom_model_data": 9290001
+        }
+      },
+      "title": {
+        "text": "Mix of Every Powder                       ",
+        "color": "#EAC435",
+        "clickEvent": {
+          "action": "open_url",
+          "value": "https://www.youtube.com/watch?v=yJKwZqOQaYI"
+        }
+      },
+      "description": {
+        "text": "+0.2 Attack Speed",
+        "color": "#345995",
+        "extra": [
+            {
+              "text": "\n-1.0 Damage",
+              "color": "#E83151"
+          },
+          {
+            "text": "\n-2 Health",
+            "color": "#E83151"
+          },
+          {
+            "text": "\n\nClearly unfit for human consumption... right?",
+            "color": "#60495A"
+        }
+        ]
+      },
+      "frame": "goal",
+      "show_toast": false,
+      "announce_to_chat": false
+    },
+    "parent": "restat:packdesc/statitems/adultgummy",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "sends_telemetry_event": false
+}

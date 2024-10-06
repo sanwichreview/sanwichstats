@@ -1,0 +1,1 @@
+function restat:items/statitems/chaostruffle/remove

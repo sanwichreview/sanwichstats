@@ -1,0 +1,47 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:iron_ingot",
+        "count": 1,
+        "components": {
+          "minecraft:enchantment_glint_override": true
+        }
+      },
+      "title": {
+        "text": "armor                       ",
+        "color": "#EAC435",
+        "clickEvent": {
+          "action": "open_url",
+          "value": "https://www.youtube.com/watch?v=yJKwZqOQaYI"
+        }
+      },
+      "description": {
+        "text": "Maximum: 20",
+        "color": "#345995",
+        "extra": [
+            {
+                "text": "\nDefault: 0",
+                "color": "#625834"
+            },
+            {
+              "text": "\nMinimum: -20",
+              "color": "#E83151"
+          },
+          {
+            "text": "\n\nThis stat adds/subtracts\nfrom any armor value you already have.\nBoth negative armor and armor over 20 have no additional effect.\n\nSpend this stat wisely!",
+            "color": "#EDF2F4"
+        }
+        ]
+      },
+      "frame": "goal",
+      "show_toast": false,
+      "announce_to_chat": false
+    },
+    "parent": "restat:packdesc/rootb",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "sends_telemetry_event": false
+}

@@ -1,0 +1,2 @@
+execute store result storage restat:chaostruffle chaostruffle.id int 1 run scoreboard players get @s ss.entID
+function restat:items/statitems/chaostruffle/rollstats with storage restat:chaostruffle chaostruffle

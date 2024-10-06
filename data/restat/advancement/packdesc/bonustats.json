@@ -1,0 +1,47 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:amethyst_shard",
+        "count": 1,
+        "components": {
+          "minecraft:enchantment_glint_override": true
+        }
+      },
+      "title": {
+        "text": "bonus stats                ",
+        "color": "#EAC435",
+        "clickEvent": {
+          "action": "open_url",
+          "value": "https://www.youtube.com/watch?v=yJKwZqOQaYI"
+        }
+      },
+      "description": {
+        "text": "Some items (currently one item) give stats that do not count toward the usual minimum or maximum!",
+        "color": "#EDF2F4",
+        "extra": [
+            {
+                "text": "\n\nType '",
+                "color": "#EDF2F4"
+              },
+              {
+                "text": "/trigger showbonuses",
+                "color": "#345995"
+              },
+              {
+                "text":"' to see a bonus stat visualizer.",
+                "color": "#EDF2F4"
+              }
+        ]
+      },
+      "frame": "goal",
+      "show_toast": false,
+      "announce_to_chat": false
+    },
+    "parent": "restat:packdesc/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "sends_telemetry_event": false
+  }

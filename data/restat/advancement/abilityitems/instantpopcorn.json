@@ -1,0 +1,17 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "player": [],
+          "item": {
+            "predicates": {"minecraft:custom_data": {"instantpopcorn":1}
+          }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "restat:items/abilityitems/instantpopcorn/consume"
+    }
+  }

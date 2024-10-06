@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "player": [],
+          "item": {
+            "components": {
+              "minecraft:custom_data": {"nog":1,"ss.resetitem":1}
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "restat:resetstats"
+    }
+  }

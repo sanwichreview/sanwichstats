@@ -1,0 +1,64 @@
+{ 
+       "type": "minecraft:crafting_shaped",
+"pattern": [
+    "E#E",
+    "WWW",
+    "CGH"
+],
+"key": {
+    "#": {
+        "item": "minecraft:enchanted_golden_apple"
+    },
+    "C": {
+        "item": "minecraft:cocoa_beans"
+    },
+    "W": {
+        "item": "minecraft:wheat"
+    },
+    "H": {
+        "item": "minecraft:honeycomb"
+    },
+    "E": {
+        "item": "minecraft:echo_shard"
+    },
+    "G": {
+        "item": "minecraft:glow_berries"
+    }
+},
+"result": {
+    "id": "minecraft:bread",
+    "count": 2,
+    "components": {
+      "minecraft:custom_data": {"fastbread":1,"ss.statitem":1},
+      "minecraft:custom_model_data": 9290001,
+      "minecraft:max_stack_size": 4,
+      "minecraft:food": {
+        "nutrition": 1,
+        "saturation": 1,
+        "can_always_eat": true,
+        "eat_seconds": 3,
+        "effects": [
+          {
+            "effect": {
+              "id": "minecraft:nausea",
+              "amplifier": 100,
+              "duration": 60,
+              "show_particles": false,
+              "show_icon": false
+            },
+            "probability": 1
+          }
+        ]
+      },
+      "minecraft:item_name": "{\"text\":\"Sweet Coffee Swirl Bread\",\"color\":\"#EAC435\"}",
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:rarity": "epic",
+      "minecraft:lore": [
+        "{\"text\":\"Unhealthy, but energizing!\",\"color\":\"#60495A\"}",
+        "{\"text\":\"+0.1 Speed\",\"italic\":false,\"color\":\"#345995\"}",
+        "{\"text\":\"-2 Health\",\"italic\":false,\"color\":\"#E83151\"}",
+        "{\"text\":\"sanwichstats\",\"italic\":false,\"color\":\"#ac2c82\"}"
+      ]
+    }
+  }
+}

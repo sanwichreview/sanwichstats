@@ -1,0 +1,47 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:golden_axe",
+        "count": 1,
+        "components": {
+          "minecraft:enchantment_glint_override": true
+        }
+      },
+      "title": {
+        "text": "damage                      ",
+        "color": "#EAC435",
+        "clickEvent": {
+          "action": "open_url",
+          "value": "https://www.youtube.com/watch?v=yJKwZqOQaYI"
+        }
+      },
+      "description": {
+        "text": "Maximum: 3.5",
+        "color": "#345995",
+        "extra": [
+            {
+                "text": "\nDefault: 1.0",
+                "color": "#625834"
+            },
+            {
+              "text": "\nMinimum: -3.5",
+              "color": "#E83151"
+          },
+          {
+            "text": "\n\nYour melee damage.\nA damage stat of 0 or lower will cause your punches to be harmless!\n\nEvery 0.5 damage is 1 health (1 half-heart).",
+            "color": "#EDF2F4"
+        }
+        ]
+      },
+      "frame": "goal",
+      "show_toast": false,
+      "announce_to_chat": false
+    },
+    "parent": "restat:packdesc/blockreach",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "sends_telemetry_event": false
+  }
