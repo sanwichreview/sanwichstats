@@ -51,9 +51,9 @@
               "{\"text\":\"🎰0.1 Speed\",\"color\":\"#345995\",\"italic\":false}",
               "{\"text\":\"🎰0.7 Mining Speed\",\"color\":\"#345995\",\"italic\":false}",
               "{\"text\":\"🎰0.5 Range\",\"color\":\"#345995\",\"italic\":false}",
-              "{\"text\":\"🎰1 Block Reach\",\"color\":\"#345995\",\"italic\":false}",
+              "{\"text\":\"🎰0.7 Block Reach\",\"color\":\"#345995\",\"italic\":false}",
               "{\"text\":\"🎰0.2 Attack Speed\",\"color\":\"#345995\",\"italic\":false}",
-              "{\"text\":\"☹ No chest armor.\",\"color\":\"#E83151\",\"italic\":false}",
+              "{\"text\":\"🙁 No chest armor.\",\"color\":\"#E83151\",\"italic\":false}",
               "{\"text\":\"sanwichstats\",\"italic\":false,\"color\":\"#ac2c82\"}"
             ]
             }

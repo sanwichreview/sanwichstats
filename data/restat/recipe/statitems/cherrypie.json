@@ -1,0 +1,49 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#E#",
+        "SVS",
+        "WLW"
+    ],
+    "key": {
+        "#": "minecraft:experience_bottle",
+        "E": "minecraft:echo_shard",
+        "S": "minecraft:wind_charge",
+        "V": "minecraft:sweet_berries",
+        "W":  "minecraft:wheat",
+        "L": "minecraft:egg"
+    },
+  "result": {
+      "id": "minecraft:stone_pickaxe",
+      "components": {
+        "!minecraft:damage":{},
+          "!minecraft:max_damage":{},
+          "!minecraft:enchantable":{},
+          "!minecraft:tool":{},
+          "!minecraft:attribute_modifiers":{},
+        "minecraft:custom_data": {"blockreachpie":1,"ss.statitem":1,"ss.nohead":1},
+        "minecraft:item_model": "sanwichstats:cherrypie",
+        "minecraft:max_stack_size": 4,
+        "minecraft:food": {
+            "nutrition": 1,
+            "saturation": 1,
+            "can_always_eat": true
+          },
+          "minecraft:consumable": {
+        "consume_seconds": 3,
+        "animation": "eat",
+        "sound": "entity.strider.eat",
+        "has_consume_particles": true
+          },
+        "minecraft:item_name": "{\"text\":\"Chiffon-Cherry Pie\",\"color\":\"#EAC435\"}",
+        "minecraft:enchantment_glint_override": true,
+        "minecraft:rarity": "epic",
+        "minecraft:lore": [
+          "{\"color\":\"#60495A\",\"text\":\"The cherry flavor is uplifting!\"}",
+          "{\"text\":\"+2.5 Block Reach\",\"italic\":false,\"color\":\"#345995\"}",
+          "{\"text\":\"🙁 No footwear.\",\"italic\":false,\"color\":\"#E83151\"}",
+          "{\"text\":\"sanwichstats\",\"italic\":false,\"color\":\"#ac2c82\"}"
+        ]
+      }
+    }
+  }

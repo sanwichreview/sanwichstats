@@ -42,8 +42,8 @@
     "{\"text\":\"This popcorn is instant! Laws of general relativity be damned.\",\"color\":\"#60495A\"}",
     "{\"text\":\"Major Ability: Teleporation (double-jump and hold to charge, release to teleport)\",\"italic\":false,\"color\":\"#56E39F\"}",
     "{\"text\":\"-8 Health\",\"italic\":false,\"color\":\"#E83151\"}",
-    "{\"text\":\"☹ You cannot wear elytra!\",\"italic\":false,\"color\":\"#E83151\"}",
-    "{\"text\":\"☹ The popping can be rather startling.\",\"italic\":false,\"color\":\"#E83151\"}",
+    "{\"text\":\"😵 You cannot wear elytra!\",\"italic\":false,\"color\":\"#E83151\"}",
+    "{\"text\":\"🍿😱 The popping can be rather startling.\",\"italic\":false,\"color\":\"#E83151\"}",
     "{\"text\":\"sanwichstats\",\"italic\":false,\"color\":\"#ac2c82\"}"
   ],
   "minecraft:item_model": "sanwichstats:tppopcorn",

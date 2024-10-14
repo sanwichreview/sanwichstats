@@ -1,0 +1,50 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#O#",
+        "SLS",
+        "WEW"
+    ],
+    "key": {
+        "#": "minecraft:echo_shard",
+        "O": "minecraft:ominous_trial_key",
+        "S": "minecraft:sugar",
+        "L": "minecraft:lime_candle",
+        "W": "minecraft:wheat",
+        "E": "minecraft:egg"
+    },
+  "result": {
+      "id": "minecraft:stone_pickaxe",
+      "components": {
+        "!minecraft:damage":{},
+          "!minecraft:max_damage":{},
+          "!minecraft:enchantable":{},
+          "!minecraft:tool":{},
+          "!minecraft:attribute_modifiers":{},
+        "minecraft:custom_data": {"blockreachpie":1,"ss.statitem":1,"ss.nohead":1},
+        "minecraft:item_model": "sanwichstats:cherrypie",
+        "minecraft:max_stack_size": 4,
+        "minecraft:food": {
+            "nutrition": 1,
+            "saturation": 1,
+            "can_always_eat": true
+          },
+          "minecraft:consumable": {
+        "consume_seconds": 3,
+        "animation": "eat",
+        "sound": "entity.strider.eat",
+        "has_consume_particles": true
+          },
+        "minecraft:item_name": "{\"text\":\"'Key' 'Lime' Pie\",\"color\":\"#EAC435\"}",
+        "minecraft:enchantment_glint_override": true,
+        "minecraft:rarity": "epic",
+        "minecraft:lore": [
+          "{\"color\":\"#60495A\",\"text\":\"Close enough.\"}",
+          "{\"text\":\"+2 Health\",\"italic\":false,\"color\":\"#345995\"}",
+          "{\"text\":\"🙂 No sneaking speed penalty\",\"italic\":false,\"color\":\"#345995\"}",
+          "{\"text\":\"🙁 No legwear.\",\"italic\":false,\"color\":\"#E83151\"}",
+          "{\"text\":\"sanwichstats\",\"italic\":false,\"color\":\"#ac2c82\"}"
+        ]
+      }
+    }
+  }

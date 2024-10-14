@@ -44,8 +44,8 @@
         "{\"text\":\"Somehow, It's completely weightless.\",\"color\":\"#60495A\"}",
         "{\"text\":\"Major Ability: Levitation (double-jump to activate)\",\"italic\":false,\"color\":\"#56E39F\"}",
         "{\"text\":\"-10 Health\",\"italic\":false,\"color\":\"#E83151\"}",
-        "{\"text\":\"☹ You cannot wear elytra!\",\"italic\":false,\"color\":\"#E83151\"}",
-        "{\"text\":\"☹ You are unaffected by slow falling effects.\",\"italic\":false,\"color\":\"#E83151\"}",
+        "{\"text\":\"😵 You cannot wear elytra!\",\"italic\":false,\"color\":\"#E83151\"}",
+        "{\"text\":\"🙁 You are unaffected by slow falling effects.\",\"italic\":false,\"color\":\"#E83151\"}",
         "{\"text\":\"sanwichstats\",\"italic\":false,\"color\":\"#ac2c82\"}"
       ],
       "minecraft:item_model": "sanwichstats:floatmacaron",
