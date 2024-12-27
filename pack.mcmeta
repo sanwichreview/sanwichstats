@@ -1,10 +1,6 @@
 {
     "pack": {
         "description": "§3sanwichstats by §6sanwichreview",
-        "pack_format": 55
-    },
-    "supported_formats": {
-        "min_inclusive": 38,
-        "max_inclusive": 55
+        "pack_format": 61
     }
 }
