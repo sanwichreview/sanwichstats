@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-	"particle": "minecraft:sanwichstats/popcorn",
-    "layer0": "minecraft:sanwichstats/tppopcorn"
-  }
-}
