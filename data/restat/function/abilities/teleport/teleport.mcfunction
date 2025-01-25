@@ -10,9 +10,10 @@ effect give @s weakness 4 0 true
 damage @s[scores={ss.teleportCooldown=1..}] 6 restat:stupidity by @s from @s
 scoreboard players set @s ss.teleportCooldown 80
 #scoreboard players set $y player_motion.api.launch 6000
-execute as @s at @s if block ~ ~-1 ~ #restat:rayignore run scoreboard players set $y player_motion.api.launch 11000
+#execute as @s at @s if block ~ ~-1 ~ #restat:rayignore run scoreboard players set $y player_motion.api.launch 11000
+execute as @s at @s if block ~ ~-1 ~ #restat:rayignore run effect give @s levitation 1 5 true
 execute as @s at @s if block ~ ~-1 ~ #restat:rayignore run effect give @s slow_falling 3 0 true 
-execute as @s at @s if block ~ ~-1 ~ #restat:rayignore run execute as @s at @s run function player_motion:api/launch_xyz
+#execute as @s at @s if block ~ ~-1 ~ #restat:rayignore run execute as @s at @s run function player_motion:api/launch_xyz
 function restat:abilities/teleport/unfloat
 $kill @e[type=item_frame,tag=$(id),tag=ss.tp]
 
